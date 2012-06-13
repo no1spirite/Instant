@@ -1,0 +1,88 @@
+﻿@import "less.less";
+
+body {
+    background-color: white;
+    margin-left: 0;
+}
+
+div.page {
+    width: 100%;
+    min-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.background {
+    height: 600px;
+    background: url("/Content/themes/base/images/mig-welding.jpg") no-repeat center;
+    z-index: 0;
+}
+
+// declare html5 elements as block level
+header, nav, section, article, footer {
+    display: block;
+}
+
+div.banner {
+    top: 300px;
+    position: absolute;
+    display: block;
+    height: 188px;
+    width: 100%;
+    z-index: 3;
+    .gradient (90deg, #5c87b2, #a9bfd6);
+    
+    div.logo {
+        height: 188px;
+        width: 100%;
+        background: url("/Content/themes/base/images/Instant4.gif") no-repeat center;
+    }
+}
+
+nav {
+    top: 465px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    ul.menu {
+        list-style: none;
+        
+        li {
+            position: relative;
+            display: inline;
+            background: url("/Content/themes/base/images/metal-button-template.gif") no-repeat center;
+            padding: 50px 40px;
+
+            a {
+                position: relative;
+                top: 15px;
+                font-size: 18px;
+                font-color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+div.contentContainer {
+    width: 100%;
+    align: center;
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    height: 148px;
+    div.content {
+        margin:0 auto;
+        width: 1200px;
+        background-color: gray;
+        display: block;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        padding: 20px;
+
+    }
+    
+    
+}

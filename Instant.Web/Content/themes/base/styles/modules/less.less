@@ -1,0 +1,44 @@
+﻿// font sizing
+
+@font_stack: Calibri, Arial, sans-serif;
+@web_font_stack: KarbidWeb, Calibri, Arial, sans-serif;
+
+@font_10: 0.625em;
+@font_12: 0.75em;
+@font_13: 0.8125em;
+@font_14: 0.875em;
+@font_15: 0.9375em;
+@font_17: 1.0625em;
+@font_18: 1.125em;
+@font_20: 1.25em;
+@font_22: 1.375em;
+@font_28: 1.75em;
+
+// colours
+
+@link: #6F6B68;
+@link_active: #a5003b;
+
+@input_text: #675C53;
+
+@nav_border: #d1cdcb;
+
+@results_border: #e9e5e2;
+
+@heading: #a5003b; 
+@copy: #3a3a37;
+@aux_nav: #6f6b68;
+@currentPage: #ededed;
+
+@searchBackground: #F4F4F4;
+@extraLightBackground: #EFEBE8; /* Very Light Grey */
+@highlightBackground: #F8CED8; /* Pink */
+
+.gradient(@origin: top, @start: blue, @stop: #d9d9d9) {
+	background-color: @start;
+	background-image: -webkit-linear-gradient(@origin, @start, @stop);
+	background-image: -moz-linear-gradient(@origin, @start, @stop);
+	background-image: -o-linear-gradient(@origin, @start, @stop);
+	background-image: -ms-linear-gradient(@origin, @start, @stop);
+	background-image: linear-gradient(@origin, @start, @stop);
+}
