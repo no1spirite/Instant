@@ -144,9 +144,15 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\themes\base\styles\main.less" />
-    <None Include="Content\themes\base\styles\modules\elements.less" />
-    <None Include="Content\themes\base\styles\modules\less.less" />
+    <Content Include="Content\themes\base\styles\main.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\themes\base\styles\modules\elements.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\themes\base\styles\modules\less.less">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
